@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamDate - Video Dating App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>StreamDate</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active"><i class="fas fa-home"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-comments"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Profile Cards Section -->
+        <section class="cards-container">
+            <div class="profile-card active" data-id="1">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Profile">
+                    <div class="profile-info">
+                        <h2>Alex, 28</h2>
+                        <p>5 miles away</p>
+                        <div class="interests">
+                            <span class="interest-tag">Travel</span>
+                            <span class="interest-tag">Coffee</span>
+                            <span class="interest-tag">Hiking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="action-btn dislike"><i class="fas fa-times"></i></button>
+                    <button class="action-btn super-like"><i class="fas fa-star"></i></button>
+                    <button class="action-btn like"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+
+            <div class="profile-card" data-id="2">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Profile">
+                    <div class="profile-info">
+                        <h2>Sarah, 26</h2>
+                        <p>3 miles away</p>
+                        <div class="interests">
+                            <span class="interest-tag">Yoga</span>
+                            <span class="interest-tag">Reading</span>
+                            <span class="interest-tag">Art</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="action-btn dislike"><i class="fas fa-times"></i></button>
+                    <button class="action-btn super-like"><i class="fas fa-star"></i></button>
+                    <button class="action-btn like"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Streaming Section -->
+        <section class="video-section">
+            <div class="video-container">
+                <div class="video-header">
+                    <h3>Live Stream Dating</h3>
+                    <div class="online-indicator">
+                        <span class="dot"></span>
+                        12 people online
+                    </div>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-player">
+                            <video muted>
+                                <source src="#" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <span class="user-name">Jessica, 25</span>
+                                <button class="join-btn">Join Stream</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-player">
+                            <video muted>
+                                <source src="#" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <span class="user-name">Mike, 30</span>
+                                <button class="join-btn">Join Stream</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matches Section -->
+        <section class="matches-section">
+            <div class="matches-header">
+                <h3>Your Matches</h3>
+                <span class="matches-count">3 new</span>
+            </div>
+            <div class="matches-grid">
+                <div class="match-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Match">
+                    <span class="match-name">Emma</span>
+                    <span class="match-time">2 min ago</span>
+                </div>
+                <div class="match-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Match">
+                    <span class="match-name">David</span>
+                    <span class="match-time">1 hour ago</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <button class="nav-btn active" data-tab="discover">
+            <i class="fas fa-fire"></i>
+            <span>Discover</span>
+        </button>
+        <button class="nav-btn" data-tab="stream">
+            <i class="fas fa-video"></i>
+            <span>Stream</span>
+        </button>
+        <button class="nav-btn" data-tab="matches">
+            <i class="fas fa-comments"></i>
+            <span>Matches</span>
+        </button>
+        <button class="nav-btn" data-tab="profile">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </button>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="matchModal">
+        <div class="modal-content">
+            <div class="match-animation">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>It's a Match!</h2>
+            <p>You and Sarah have liked each other</p>
+            <div class="modal-actions">
+                <button class="btn-secondary">Keep Swiping</button>
+                <button class="btn-primary">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
